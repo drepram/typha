@@ -1,0 +1,23 @@
+{
+  "name": "typha",
+  "version": "0.1.0",
+  "description": "Keep track of the things you've did today",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caxvis/typha.git"
+  },
+  "author": "Andre Shahan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caxvis/typha/issues"
+  },
+  "homepage": "https://github.com/caxvis/typha#readme",
+  "dependencies": {
+    "moment": "^2.22.1",
+    "prompt": "^1.0.0"
+  }
+}
