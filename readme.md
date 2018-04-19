@@ -5,4 +5,4 @@ Keep track of the things you've done today.
 
 ## Authors
 
-- <a href="https://github.com/caxvis">Andre Shahan</a>
+- Andre Shahan <a href="https://twitter.com/caxvis">@caxvis</a>
