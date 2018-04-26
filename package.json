@@ -2,7 +2,7 @@
   "name": "typha",
   "version": "0.1.0",
   "description": "Keep track of the things you've did today",
-  "main": "index.js",
+  "main": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
