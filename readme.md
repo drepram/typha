@@ -3,6 +3,11 @@
 
 Keep track of the things you've done today.
 
+## Todo's
+
+- Get total tasks did today [ ]
+- Fix init bug [ ]
+
 ## Authors
 
-- Andre Shahan <a href="https://twitter.com/caxvis">@caxvis</a>
+- Andre Sion (<a href="https://twitter.com/caxvis">@caxvis</a>)
