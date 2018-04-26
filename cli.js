@@ -15,6 +15,8 @@ const FILE_PATH = homedir() + `/.typha/${ymd}.json`;
 
 // Take user input's
 
+initJson()
+
 prompt.start();
 
 prompt.get(['task'], function(err, result) {
@@ -34,9 +36,6 @@ function strToJson(task, ymd, hms) {
 	  	json.writeFile(FILE_PATH, data, function (err) {
 	  		if (err) {
 	  			console.error(err);
-	  		} else {
-		  		initJson()
-		  		print('\nAn error occured.\nPlease retype your achivements.')
 	  		}
 	  	})
 	  } else {
