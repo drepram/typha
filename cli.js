@@ -1,12 +1,17 @@
 const prompt = require('prompt'),
 moment = require('moment'),
 fs = require('fs'),
-json = require('jsonfile');
+json = require('jsonfile'),
+mkdirp = require('mkdirp'),
+homedir = require('homedir');
 
 const print = console.log,
 date = moment().format(),
-ymd = date.slice(0, 10),
+// ymd = date.slice(0, 10),
+ymd = '2018-04-28',
 hms = date.slice(11, 19);
+
+const FILE_PATH = homedir() + `/.typha/${ymd}.json`;
 
 // Take user input's
 
@@ -23,12 +28,10 @@ function strToJson(task, ymd, hms) {
 	let data = {};
 	data.time = hms;
 	data.task = task;
-
-	let file = `./data/${ymd}.json`;
-	json.readFile(file, function(err, obj) {
+	json.readFile(FILE_PATH, function(err, obj) {
 	  if (obj === undefined) {
 	  	let data = {};
-	  	json.writeFile(file, data, function (err) {
+	  	json.writeFile(FILE_PATH, data, function (err) {
 	  		if (err) {
 	  			console.error(err);
 	  		} else {
@@ -37,7 +40,7 @@ function strToJson(task, ymd, hms) {
 	  		}
 	  	})
 	  } else {
-		let obj = require(`./data/${ymd}.json`),
+		let obj = require(FILE_PATH),
 		key = '';
 
 		obj[key].push(data);
@@ -58,6 +61,5 @@ function initJson(o) {
 }
 
 function writeToFile(data) {
-	let file = `./data/${ymd}.json`;
-	fs.writeFileSync(file, data, 'utf-8');
+	fs.writeFileSync(FILE_PATH, data, 'utf-8');
 }
