@@ -35,7 +35,7 @@ function strToJson(task, ymd, hms) {
 	  		if (err) {
 	  			console.error(err);
 	  		} else {
-		  		initJson(data)
+		  		initJson()
 		  		print('\nAn error occured.\nPlease retype your achivements.')
 	  		}
 	  	})
@@ -51,7 +51,7 @@ function strToJson(task, ymd, hms) {
 
 }
 
-function initJson(o) {
+function initJson() {
 	let obj = {},
 	key = '';
 
