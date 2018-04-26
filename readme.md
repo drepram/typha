@@ -5,8 +5,8 @@ Keep track of the things you've done today.
 
 ## Todo's
 
-- Get total tasks did today [ ]
-- Fix init bug [ ]
+- Get total tasks did today []
+- Fix init bug []
 
 ## Authors
 
