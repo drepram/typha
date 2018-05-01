@@ -1,4 +1,5 @@
 # Typha
+<img src="assets/banner.png" alt="Typha Banner">
 <img src="https://travis-ci.org/caxvis/typha.svg?branch=master" alt="Repository Build Status">
 
 Keep track of the things you've done today.
