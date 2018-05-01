@@ -7,7 +7,7 @@ homedir = require('homedir');
 
 const print = console.log,
 date = moment().format(),
-ymd = date.slice(0, 10),,
+ymd = date.slice(0, 10),
 hms = date.slice(11, 19);
 
 const FILE_PATH = homedir() + `/.typha/${ymd}.json`;
