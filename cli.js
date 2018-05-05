@@ -10,16 +10,17 @@ date = moment().format(),
 ymd = date.slice(0, 10),
 hms = date.slice(11, 19);
 
-const FILE_PATH = homedir() + `/.typha/${ymd}.json`;
+const DIR = homedir() + `/.typha`,
+FILE_PATH = `${DIR}/${ymd}.json`;
 
 // Take user input's
 
-initJson()
+// initJson()
 
 prompt.start();
 
 prompt.get(['task'], function(err, result) {
-	const task = result.task,
+	const task = result.task
 	end = strToJson(task, ymd, hms);
 })
 
@@ -50,6 +51,10 @@ function strToJson(task, ymd, hms) {
 }
 
 function initJson() {
+	// mkdirp(DIR, function (err) {
+	//     if (err) console.error(err)
+	// });
+	
 	let obj = {},
 	key = '';
 
