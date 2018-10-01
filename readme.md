@@ -12,3 +12,6 @@ Keep track of the things you've done today.
 ## Authors
 
 - Andre Sion (<a href="https://twitter.com/caxvis">@caxvis</a>)
+
+## License
+Typha is licensed under the MIT License.
