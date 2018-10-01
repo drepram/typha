@@ -13,5 +13,7 @@ Keep track of the things you've done today.
 
 - Andre Sion (<a href="https://twitter.com/caxvis">@caxvis</a>)
 
+
 ## License
-Typha is licensed under the MIT License.
+
+Typha is licensed under the MIT License. You can view the `license.md` file [here](https://github.com/caxvis/typha/blob/master/license.md).
